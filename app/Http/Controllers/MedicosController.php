@@ -15,7 +15,7 @@ class MedicosController extends Controller
         $medicos=Medico::all();
       //  Log::debug($medicos);
       // return view('medicos.index',compact('medico'));
-      return view('medicos.index',["datos"=>$medicos]);
+      return view('medicos.index', compact('medicos'));
         //
     }
 
