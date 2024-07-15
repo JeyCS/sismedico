@@ -6,7 +6,7 @@ se encuentra el div el cual contiene el boton de crear registro y el de volver -
 <div class="row">
     <div class="col-12">
         <div>
-            <h2>Crear Registro</h2>
+            <h2>Medicos</h2>
         </div>
         <div>
             <a href="{{route('medicos.index')}}" class="btn btn-primary">Volver</a>
@@ -63,22 +63,22 @@ se encuentra el div el cual contiene el boton de crear registro y el de volver -
 
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
                 <div class="form-group">
-                    <strong>Producto:</strong>
-                    <input type="text" name="producto" class="form-control" placeholder="Nombre del Producto" >
+                    <strong>Especialidad:</strong>
+                    <input type="text" name="especialidad" class="form-control" placeholder="Especialidad" >
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+            <div class="col-xs-12 col-sm-12 col-md-6 mt-2">
                 <div class="form-group">
-                    <strong>Precio:</strong>
-                    <input type="date" name="precio" class="form-control" placeholder="Precio" >
+                    <strong>Fecha de nacimiento:</strong>
+                    <input type="date" name="fecha de nacimiento" class="form-control" placeholder="Fecha de Nacimiento" >
                 </div>
             </div>
 
 
             <div class="col-xs-12 col-sm-12 col-md-6 mt-2">
                 <div class="form-group">
-                    <strong>Fecha de compra :</strong>
+                    <strong>Fecha de ingreso:</strong>
                     <input type="date" name="due_date" class="form-control" id="">
                 </div>
             </div>
