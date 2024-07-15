@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-12">
         <div>
-            <h2>Crear Registro</h2>
+            <h2>Medicos</h2>
         </div>
         <div>
             <a href="{{route('medicos.create')}}" class="btn btn-primary">Crear</a>
@@ -19,19 +19,34 @@
     >
         <thead>
             <tr>
-                <th scope="col">Column 1</th>
-                <th scope="col">Column 2</th>
-                <th scope="col">Column 3</th>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Email</th>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Fecha Ingreso</th>
+
             </tr>
         </thead>
         <tbody>
+
+            @foreach($medicos as $row)
             <tr class="">
-                <td scope="row">R1C1</td>
-                <td>R1C2</td>
-                <td>R1C3</td>
+                <td scope="row"> {{$row->nombre}}</td>
+                <td>{{$row->apellido}}</td>
+                <td>{{$row->telefono}}</td>
+                <td>{{$row->especialidad}}</td>
+                <td>{{$row->fechaingreso}}</td>
+                <td>frast</td>
             </tr>
+            @endforeach
             <tr class="">
-                <td scope="row">Item</td>
+                <td scope="row"></td>
+                <td>Item</td>
+                <td>Item</td>
                 <td>Item</td>
                 <td>Item</td>
             </tr>
